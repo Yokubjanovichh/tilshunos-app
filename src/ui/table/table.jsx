@@ -61,7 +61,7 @@ export default function TableBar({ dataReceived }) {
 
   return (
     <div style={{ width: "100%", rowGap: "10px", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column" }}>
-      <Input style={{ width: "100%" }} onChange={(e) => setSearch(e.target.value)} mb="10px" placeholder="Your email" leftSection={<CiSearch size={16} />} />
+      <Input style={{ width: "100%" }} onChange={(e) => setSearch(e.target.value)} mb="10px" placeholder="" leftSection={<CiSearch size={16} />} />
 
       <div style={{ width: "100%", height: "550px", overflow: "scroll" }}>
         {rows.length ? (
