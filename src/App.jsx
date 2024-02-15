@@ -8,6 +8,7 @@ import Boglanish from "./features/boglanish/Boglanish";
 import BizHaqimizda from "./features/biz-haqimizda/BizHaqimizda";
 import DasturHaqida from "./features/dastur-haqida/DasturHaqida";
 import AppLayOut from "./ui/AppLayOut";
+import Error from "./ui/Error";
 import "@mantine/core/styles.css";
 
 const router = createBrowserRouter([
@@ -22,16 +23,19 @@ const router = createBrowserRouter([
         path: "/yuklama",
         element: <Yuklama />,
         loader: loaderYuklama,
+        errorElement: <Error />,
       },
       {
         path: "/kumakchi",
         element: <Kumakchi />,
         loader: loaderKumakchi,
+        errorElement: <Error />,
       },
       {
         path: "/boglovchi",
         element: <Boglovchi />,
         loader: loaderBoglovchi,
+        errorElement: <Error />,
       },
       {
         path: "/boglanish",
@@ -48,6 +52,7 @@ const router = createBrowserRouter([
       {
         path: "/boglanish",
         element: <Boglanish />,
+        errorElement: <Error />,
       },
     ],
   },
