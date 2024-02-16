@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Title, TextInput, Textarea, SimpleGrid, Group, Button, Notification } from "@mantine/core";
+import { Container, Title, TextInput, Textarea, SimpleGrid, Group, Button, Notification, Text } from "@mantine/core";
 
 const YOUR_CHAT_ID = -1002114577604;
 const YOUR_BOT_TOKEN = "6301042909:AAEbE5V7Jt1LSLyBygBRQtIAjCwmFIp60ZE";
@@ -60,6 +60,7 @@ export default function Boglanish() {
           <Title order={2} size="h1" style={{ fontFamily: "Greycliff CF, var(--mantine-font-family)" }} fw={900} ta="center">
             Bog'lanish
           </Title>
+          <Text style={{ fontStyle: "italic", color: "#ccc", fontSize: "20px" }}> Muallif bilan bog'lanish</Text>
 
           <SimpleGrid style={{ width: "500px" }} cols={{ base: 1, sm: 2 }} mt="xl">
             <TextInput required type="text" value={name} onChange={(e) => setName(e.target.value)} size="md" style={{ width: "240px" }} label="Ism" placeholder="Ismingiz" name="name" variant="filled" />
