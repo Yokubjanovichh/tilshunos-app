@@ -35,7 +35,6 @@ export default function Yuklama() {
 export async function loader() {
   const words = getAllData();
   const newData = [];
-  let i = 0;
 
   // Birinchi datani tekshirib, turkumi: yuklama bo'lganlarni yangi arrayga qo'shish
   words.forEach((word) => {
@@ -43,7 +42,6 @@ export async function loader() {
       // Yangi dataga qo'shish
       newData.push({
         ...word,
-        tartibRaqam: (i += 1),
       });
     }
   });
