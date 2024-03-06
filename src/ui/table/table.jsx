@@ -41,7 +41,6 @@ export default function TableBar({ dataReceived }) {
     });
     setPage(1);
     setData(chunk(filterdData));
-    console.log(data);
   }, [dataReceived, search, shakliBuyicha, sofTurkumiBuyicha]);
 
   const rows = data[activePage - 1]?.map((item, index) => (

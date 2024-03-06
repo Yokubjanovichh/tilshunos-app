@@ -37,7 +37,6 @@ export default function Boglanish() {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
         setName("");
         setPhone("");
         setMessage("");

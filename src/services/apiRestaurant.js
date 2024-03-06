@@ -53,8 +53,7 @@ export async function getAllWords() {
 //   }
 // }
 
-
-export function getAllData() {
+export async function getAllData() {
   const data = [
     {
       yordamchiSoz: "-a   I",
